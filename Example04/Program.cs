@@ -10,8 +10,17 @@ namespace Example04
     {
         private static void Main(string[] args)
         {
+            int number1 = 0;
             Console.WriteLine("請輸入第一個數字");
-            int number1 = int.Parse(Console.ReadLine());
+            try
+            {
+                number1 = int.Parse(Console.ReadLine());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine();
+            }
+
             Console.WriteLine("請輸入第二個數字");
             int number2 = int.Parse(Console.ReadLine());
 
